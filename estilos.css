@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+:root {
+    --starbucks-green: #008248; 
+    --light-green: #A5D6A7;     
+    --dark-green: #0C3823;      
+    --crema: #FDFBF5;           
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    background-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav-links a:hover {
+    color: var(--starbucks-green);
+}
+
+.location-link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold; 
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.btn-outline {
+    border-color: var(--black);
+    color: var(--black);
+}
+
+.btn-solid {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn-outline-green {
+    border-color: var(--starbucks-green);
+    color: var(--starbucks-green);
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn-outline-white {
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+main {
+    padding: 30px 40px; 
+    max-width: 1500px;  
+    margin: 0 auto;     
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+}
+
+.banner.reverse {
+    flex-direction: row-reverse;
+}
+
+.banner-img {
+    flex: 1;
+    display: flex;
+    padding: 0;
+    align-items: stretch;
+}
+
+.fit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.banner-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.align-center {
+    text-align: center;
+    align-items: center;
+}
+
+.half-banners {
+    display: flex;
+    gap: 30px; 
+}
+
+.half-banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.half-text {
+    padding: 30px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-crema { background-color: var(--crema); }
+.bg-light-green { background-color: var(--light-green); }
+.bg-green { background-color: var(--starbucks-green); }
+.bg-dark-green { background-color: var(--dark-green); }
+
+.text-green { color: var(--starbucks-green); }
+.text-dark-green { color: var(--dark-green); }
+.text-white { color: var(--white); }
+
+footer {
+    padding: 40px;
+    border-top: 2px solid #e2e2e2;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: var(--black);
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-circle {
+    background-color: var(--black);
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-legal {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-legal a {
+    color: var(--black);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+}
