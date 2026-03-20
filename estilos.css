@@ -1,3 +1,6 @@
+/* 
+   GLOBALES
+    */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +17,9 @@
     --black: #000000;
 }
 
+/* 
+   2. HEADER / NAVBAR
+    */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,6 +27,9 @@
     padding: 15px 40px;
     background-color: var(--white);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
 }
 
 .nav-left, .nav-right {
@@ -60,6 +69,9 @@
     font-weight: bold; 
 }
 
+/* 
+   3. BOTONES
+    */
 .btn {
     padding: 8px 16px;
     border-radius: 20px;
@@ -96,6 +108,9 @@
     display: inline-block;
 }
 
+/* 
+   4. PÁGINA PRINCIPAL (index.html)
+    */
 main {
     padding: 30px 40px; 
     max-width: 1500px;  
@@ -181,6 +196,82 @@ main {
 .text-dark-green { color: var(--dark-green); }
 .text-white { color: var(--white); }
 
+/* 
+   5. PÁGINA DE MENÚ (menu.html)
+    */
+.menu-main {
+    padding: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.menu-header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.menu-header h1 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--black);
+}
+
+.menu-category h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.menu-category hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px;       
+    margin-bottom: 60px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.circle-image {
+    background-color: var(--dark-green);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle-image img {
+    max-width: 65%; 
+    max-height: 65%;
+    object-fit: contain;
+}
+
+.menu-item p {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+/* 
+   6. FOOTER Y BOTÓN
+    */
 footer {
     padding: 40px;
     border-top: 2px solid #e2e2e2;
@@ -247,4 +338,23 @@ footer {
     text-align: center;
     color: #666;
     font-size: 0.85rem;
+}
+
+.floating-btn {
+    position: fixed; 
+    bottom: 30px;    
+    right: 30px;     
+    background-color: var(--starbucks-green);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;   
+    transition: transform 0.2s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.05);
 }
