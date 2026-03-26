@@ -1,0 +1,180 @@
+/* =========================================
+   MENÚ DESPLEGABLE (Dropdown de Rewards)
+   ========================================= */
+.dropdown-trigger {
+    position: relative; 
+    padding-bottom: 20px; 
+}
+
+.active-link {
+    border-bottom: 4px solid var(--starbucks-green);
+    padding-bottom: 5px;
+}
+
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 600px; 
+    background-color: #1e1e1e; 
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 200;
+}
+
+.dropdown-trigger:hover .dropdown-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-col h4 {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.dropdown-col a {
+    color: #ccc;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.dropdown-col a:hover {
+    color: var(--white);
+}
+
+/* =========================================
+   PANTALLA DIVIDIDA (Split Layout)
+   ========================================= */
+.split-layout {
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    gap: 0;
+}
+
+/* LADO IZQUIERDO ESTÁTICO */
+.left-panel {
+    flex: 0 0 40%; 
+    height: calc(100vh - 80px); 
+    position: sticky; 
+    top: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que la imagen de la mano se desborde */
+}
+
+.panel-content {
+    text-align: center;
+    margin-top: -100px; /* Sube un poco el texto para dejar espacio a la mano */
+    z-index: 2; /* Mantiene el texto por encima de la imagen */
+}
+
+.panel-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.panel-content h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.panel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-solid-white {
+    background-color: var(--white);
+    color: var(--dark-green);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--white);
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--white);
+}
+
+/* Imagen de la mano anclada abajo */
+.hero-hand {
+    position: absolute;
+    bottom: -20px; /* Lo bajamos un poquito para que el corte se vea natural */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    z-index: 1;
+}
+
+/* LADO DERECHO DESLIZABLE */
+.right-panel {
+    flex: 0 0 60%; 
+    background-color: var(--white);
+}
+
+/* =========================================
+   SECCIONES INTERNAS
+   ========================================= */
+.rewards-section {
+    padding: 60px 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.rewards-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.benefit-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Círculos con números para los pasos */
+.step-number {
+    background-color: var(--dark-green);
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
