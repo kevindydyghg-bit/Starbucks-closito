@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - Starbucks Clon</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+    
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://www.starbucks.com.mx/static/images/logo.svg" alt="Starbucks Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="menu.html">MENÚ</a></li>
+                    <li class="dropdown-trigger">
+                        <a href="rewards.html">REWARDS</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-col">
+                                <h4>Starbucks Rewards</h4>
+                                <a href="registro.html">Regístrate</a>
+                                <a href="#">¿Cómo funciona?</a>
+                                <a href="#">Beneficios especiales</a>
+                                <a href="#">Términos y condiciones</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <h4>Mi cuenta</h4>
+                                <a href="login.html">Estado de Cuenta</a>
+                                <a href="login.html">Mi perfil</a>
+                                <a href="login.html">Mis tarjetas</a>
+                                <a href="login.html">Mis movimientos</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <h4>Más Información</h4>
+                                <a href="#">Promociones</a>
+                                <a href="#">FAQs Card</a>
+                                <a href="#">FAQs de Starbucks Rewards</a>
+                                <a href="#">Términos y condiciones Card</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="location-link">LOCALIZA TU TIENDA</a>
+            <a href="login.html" class="btn btn-outline">Inicia Sesión</a>
+            <a href="registro.html" class="btn btn-solid active-btn">Únete Ahora</a>
+        </div>
+    </header>
+
+    <main class="split-layout">
+        
+        <section class="left-panel bg-green text-white">
+            <div class="panel-content">
+                <h1 style="font-size: 2.5rem; letter-spacing: 0;">Crea una cuenta 🌟</h1>
+            </div>
+        </section>
+
+        <section class="right-panel">
+            
+            <div class="auth-section bg-crema" style="padding: 80px 40px; min-height: 60vh; display: flex; flex-direction: column; justify-content: center;">
+                <form class="login-form" style="max-width: 400px; margin: 0 auto; width: 100%;">
+                    
+                    <h3 style="margin-bottom: 30px; font-size: 1.2rem;">Información personal</h3>
+
+                    <div class="input-group">
+                        <label for="nombre"><span style="color: red;">*</span> Nombre(s)</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="apellidos"><span style="color: red;">*</span> Apellidos</label>
+                        <input type="text" id="apellidos" placeholder="Ingresa tus apellidos" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email_reg"><span style="color: red;">*</span> Email</label>
+                        <input type="email" id="email_reg" placeholder="Ingresa tu email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password_reg"><span style="color: red;">*</span> Contraseña</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password_reg" placeholder="Crea una contraseña" required>
+                            <span class="toggle-password">👁️</span> 
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 30px; margin-top: 30px;">
+                        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px;">
+                            <input type="checkbox" id="terms" style="margin-top: 5px;">
+                            <label for="terms" style="font-size: 0.85rem; color: #444; line-height: 1.4;">Acepto los <a href="#" style="color: var(--starbucks-green); text-decoration: underline;">Términos y Condiciones</a> y el <a href="#" style="color: var(--starbucks-green); text-decoration: underline;">Aviso de Privacidad</a>.</label>
+                        </div>
+                    </div>
+
+                    <div style="text-align: right;">
+                        <button type="submit" class="btn btn-solid btn-submit">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="integrated-footer" style="padding: 60px 80px 40px; border-top: 1px solid #eee;">
+               <div class="display: flex; gap: 100px; margin-bottom: 60px;">
+                    <div>
+                        <h4 style="margin-bottom: 25px; font-size: 1.1rem; font-weight: 600;">Sobre nosotros</h4>
+                        <a href="#" style="display: block; color: var(--text-grey); margin-bottom: 15px; font-size: 0.95rem;">Historias Starbucks</a>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 25px; font-size: 1.1rem; font-weight: 600;">Atención al cliente</h4>
+                        <a href="#" style="display: block; color: var(--text-grey); margin-bottom: 15px; font-size: 0.95rem;">Contáctanos</a>
+                        <a href="#" style="display: block; color: var(--text-grey); margin-bottom: 15px; font-size: 0.95rem;">Facturas Electrónicas</a>
+                        <a href="#" style="display: block; color: var(--text-grey); margin-bottom: 15px; font-size: 0.95rem;">Formas de comprar</a>
+                    </div>
+                </div>
+               <div class="footer-bottom text-center">
+                    <p style="font-size: 0.75rem; color: #999;">Ⓒ 2026. Starbucks Coffee Company. Reservados todos los derechos</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

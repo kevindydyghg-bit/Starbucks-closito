@@ -1,22 +1,74 @@
-<main class="split-layout">
-        <!-- LADO IZQUIERDO ESTÁTICO -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - Starbucks Clon</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="rewards.css">
+</head>
+<body class="rewards-page">
+    
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="https://www.starbucks.com.mx/static/images/logo.svg" alt="Starbucks Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="menu.html">MENÚ</a></li>
+                    <li class="dropdown-trigger">
+                        <a href="rewards.html" class="active-link">REWARDS</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-col">
+                                <h4>Starbucks Rewards</h4>
+                                <a href="registro.html">Regístrate</a>
+                                <a href="#">¿Cómo funciona?</a>
+                                <a href="#">Beneficios especiales</a>
+                                <a href="#">Términos y condiciones</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <h4>Mi cuenta</h4>
+                                <a href="login.html">Estado de Cuenta</a>
+                                <a href="login.html">Mi perfil</a>
+                                <a href="login.html">Mis tarjetas</a>
+                                <a href="login.html">Mis movimientos</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <h4>Más Información</h4>
+                                <a href="#">Promociones</a>
+                                <a href="#">FAQs Card</a>
+                                <a href="#">FAQs de Starbucks Rewards</a>
+                                <a href="#">Términos y condiciones Card</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="location-link">📍 LOCALIZA TU TIENDA</a>
+            <a href="login.html" class="btn btn-outline">Inicia Sesión</a>
+            <a href="registro.html" class="btn btn-solid">Únete Ahora</a>
+        </div>
+    </header>
+
+    <main class="split-layout">
+        
         <section class="left-panel bg-green text-white">
             <div class="panel-content">
                 <h1>STARBUCKS<sup style="font-size: 1.2rem;">®</sup><br>REWARDS</h1>
                 <h2>Holaaaaa, café gratis</h2>
                 <div class="panel-buttons">
-                    <a href="#" class="btn btn-outline-white">Inicia Sesión</a>
-                    <a href="#" class="btn btn-solid-white">Únete Ahora</a>
+                    <a href="login.html" class="btn btn-outline-white">Inicia Sesión</a>
+                    <a href="registro.html" class="btn btn-solid-white">Únete Ahora</a>
                 </div>
             </div>
-            <!-- La mano con posición absoluta -->
-            <img src="https://rewards.starbucks.mx/img/2023/06/hero-movil.png" alt="App Starbucks" class="hero-hand">
+            <img src="https://rewards.starbucks.mx/_next/static/media/bg-section-left-hand.0d6943f4dd00e30428d035564a73c510.png" alt="App Starbucks" class="hero-hand">
         </section>
 
-        <!-- LADO DERECHO DESLIZABLE -->
         <section class="right-panel">
             
-            <!-- SECCIÓN 1: NIVEL GREEN -->
             <div class="rewards-section text-center">
                 <h3 style="max-width: 600px; margin: 0 auto 40px; line-height: 1.4;">Únete a Starbucks Rewards y desbloquea beneficios al ser socio Nivel Green, todo mientras obtienes estrellas</h3>
                 
@@ -39,7 +91,6 @@
                     </div>
                 </div>
 
-                <!-- SECCIÓN 2: NIVEL GOLD -->
                 <h3 style="margin-bottom: 40px;">Obtén más beneficios al llegar a nivel Gold con 200 estrellas ⭐</h3>
                 <div class="benefits-grid" style="margin-bottom: 50px;">
                     <div class="benefit-item">
@@ -61,7 +112,6 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN 3: TUS CAFÉS SE CONVIERTEN... -->
             <div class="rewards-section bg-crema text-center" style="padding: 60px 40px;">
                 <h3 style="margin-bottom: 40px;">Tus cafés se convierten en estrellas y recompensas increíbles</h3>
                 <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 40px;">
@@ -70,11 +120,10 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN 4: OBTÉN ESTRELLAS Y GANA... -->
             <div class="rewards-section text-center" style="padding-bottom: 0;">
                 <h3 style="margin-bottom: 10px;">Obtén estrellas y gana recompensas</h3>
                 <p style="font-size: 1.1rem; margin-bottom: 50px;">Así es como funciona:</p>
-                <div style="display: flex; justify-content: space-between; align-items: center; text-align: left; max-width: 700px; margin: 0 auto;">
+                <div style="display: flex; justify-content: space-between; align-items: center; text-align: left; max-width: 800px; margin: 0 auto;">
                     
                     <div style="flex: 1; display: flex; flex-direction: column; gap: 40px;">
                         <div style="display: flex; align-items: center; gap: 20px;">
@@ -100,12 +149,10 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN 5: ORDENA Y PAGA COMO QUIERAS -->
             <div class="rewards-section bg-crema text-center" style="padding: 60px 40px;">
                 <h3 style="margin-bottom: 60px;">Ordena y paga como quieras</h3>
                 
                 <div style="display: flex; flex-direction: column; gap: 50px; max-width: 800px; margin: 0 auto;">
-                    <!-- Fila 1 ($20) -->
                     <div style="display: flex; align-items: center; justify-content: space-between; text-align: left; gap: 30px;">
                         <div style="flex: 1; display: flex; align-items: center; gap: 10px;">
                             <img src="https://rewards.starbucks.mx/img/2023/06/estrella.png" alt="Estrella" style="width: 35px;">
@@ -121,7 +168,6 @@
                         </div>
                     </div>
                     
-                    <!-- Fila 2 ($10) -->
                     <div style="display: flex; align-items: center; justify-content: space-between; text-align: left; gap: 30px;">
                         <div style="flex: 1; display: flex; align-items: center; gap: 10px;">
                             <img src="https://rewards.starbucks.mx/img/2023/06/estrella.png" alt="Estrella" style="width: 35px;">
@@ -138,7 +184,6 @@
                     </div>
                 </div>
 
-                <!-- Personaliza tu experiencia -->
                 <h3 style="margin-top: 80px; margin-bottom: 40px; font-size: 1.3rem;">Personaliza tu experiencia con tu Starbucks Card® Favorita</h3>
                 <div style="display: flex; align-items: center; justify-content: center; text-align: left; gap: 60px;">
                     <div style="max-width: 300px;">
@@ -149,15 +194,11 @@
                 </div>
             </div>
 
-            <!-- SECCIÓN 6: EXPERIENCIA LLENA DE RECOMPENSAS -->
             <div class="rewards-section text-center" style="padding-bottom: 0;">
                 <h3 style="margin-bottom: 30px;">Una experiencia llena de recompensas y beneficios con tus favoritos</h3>
                 
-                <!-- Mockup celular central -->
-                <div style="margin-bottom: 40px;">
-                    <img src="https://rewards.starbucks.mx/img/2023/06/mockup-celular.png" alt="Consulta tu saldo" style="height: 250px; margin-bottom: 10px;">
-                    <p style="font-weight: bold; font-size: 1.1rem;">Consulta tu saldo</p>
-                </div>
+                <img src="https://rewards.starbucks.mx/img/2023/06/estrellas-65.gif" alt="65 estrellas" style="width: 150px; margin-bottom: 20px;">
+                <p style="font-weight: bold; font-size: 0.9rem; margin-bottom: 10px;">Acumula estrellas</p>
 
                 <p style="font-size: 0.95rem; color: #444; max-width: 600px; margin: 0 auto 30px; line-height: 1.5;">Descarga la app Starbucks México, es una opción de pago sin contacto, cada que vengas paga con ella, acumula estrellas y obtén recompensas.</p>
                 
@@ -170,7 +211,6 @@
                 <img src="https://rewards.starbucks.mx/img/2023/06/gold-pan.png" alt="Mano con regalo" style="width: 250px;">
             </div>
 
-            <!-- SECCIÓN 7: CONOCE MÁS -->
             <div class="bg-crema" style="display: flex; align-items: center; justify-content: center; padding: 60px 40px; gap: 40px; margin-top: 40px;">
                 <img src="https://rewards.starbucks.mx/img/2023/06/icono.png" alt="55 estrellas" style="height: 150px;">
                 <div style="text-align: left;">
@@ -180,5 +220,13 @@
                 </div>
             </div>
 
+            <footer class="integrated-footer" style="padding: 60px 80px 40px; border-top: 1px solid #eee; margin-top: 40px;">
+               <div class="footer-bottom text-center">
+                    <p style="font-size: 0.75rem; color: #999;">Ⓒ 2026. Starbucks Coffee Company. Reservados todos los derechos</p>
+                </div>
+            </footer>
+
         </section>
     </main>
+</body>
+</html>
